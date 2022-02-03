@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 
 class DomainCommand extends Command
 {
-    protected $signature = 'domain:method';
+    protected $signature = 'make:domain';
 
     protected $description = 'Cria o sistema de pastas e arquivos para o domínio';
 
