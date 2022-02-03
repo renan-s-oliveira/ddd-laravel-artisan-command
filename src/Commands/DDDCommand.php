@@ -4,9 +4,9 @@ namespace DDDArtisan\Commands;
 
 use Illuminate\Console\Command;
 
-class ApplicationCommand extends Command
+class DDDCommand extends Command
 {
-    protected $signature = 'make:application {name} {type}';
+    protected $signature = 'make:ddd {paste}';
 
     protected $description = 'Cria o sistema de pastas e arquivos para Application';
 
@@ -17,6 +17,6 @@ class ApplicationCommand extends Command
 
     public function handle()
     {
-        echo 'Application Command';
+        echo 'DDD Command';
     }
 }
