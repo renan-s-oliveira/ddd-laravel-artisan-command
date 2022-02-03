@@ -2,6 +2,7 @@
 
 namespace DDDArtisan\DDDArtisanProvider;
 
+use DDDArtisan\Commands\DDDCommand;
 use DDDArtisan\Commands\DomainCommand;
 use DDDArtisan\Commands\SupportCommand;
 use Illuminate\Support\ServiceProvider;
@@ -24,6 +25,7 @@ class DDDArtisanProvider extends ServiceProvider
             DomainCommand::class,
             SupportCommand::class,
             ApplicationCommand::class,
+            DDDCommand::class,
         ]);
 
         $this->publishes([
