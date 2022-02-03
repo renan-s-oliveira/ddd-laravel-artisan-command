@@ -3,7 +3,9 @@
 namespace DDDArtisan\DDDArtisanProvider;
 
 use DDDArtisan\Commands\DomainCommand;
+use DDDArtisan\Commands\SupportCommand;
 use Illuminate\Support\ServiceProvider;
+use DDDArtisan\Commands\ApplicationCommand;
 
 class DDDArtisanProvider extends ServiceProvider
 {
@@ -20,6 +22,8 @@ class DDDArtisanProvider extends ServiceProvider
     {
         $this->commands([
             DomainCommand::class,
+            SupportCommand::class,
+            ApplicationCommand::class,
         ]);
     }
 }
