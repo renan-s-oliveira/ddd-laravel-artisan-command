@@ -1,0 +1,29 @@
+{
+    "name": "renan-s-oliveira/ddd-artisan",
+    "description": "Pacote para auxiliar o uso de DDD no Laravel com comando artisan",
+    "type": "command-artisan",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DDDArtisan\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Renan de Souza Oliveira",
+            "email": "renanoliveiradev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "^8.12"
+    },
+    "extra": {
+        "laravel": {
+            "providers":[
+                "DDDArtisan\\DDDArtisanProvider\\DDDArtisanProvider"
+            ]
+        }
+    }
+}
