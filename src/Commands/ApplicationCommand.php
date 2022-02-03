@@ -4,7 +4,7 @@ namespace DDDArtisan\Commands;
 
 use Illuminate\Console\Command;
 
-class SupportCommand extends Command
+class ApplicationCommand extends Command
 {
     protected $signature = 'make:application';
 
