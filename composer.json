@@ -12,6 +12,10 @@
         {
             "name": "Renan de Souza Oliveira",
             "email": "renanoliveiradev@gmail.com"
+        },
+        {
+            "name": "Caio Lima",
+            "email": "dev.caiolima@gmai.com"
         }
     ],
     "minimum-stability": "dev",
