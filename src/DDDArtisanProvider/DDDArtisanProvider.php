@@ -25,5 +25,9 @@ class DDDArtisanProvider extends ServiceProvider
             SupportCommand::class,
             ApplicationCommand::class,
         ]);
+
+        $this->publishes([
+            __DIR__.'/../config/dddartisan.php' => config_path('dddartisan.php'),
+        ]);
     }
 }
