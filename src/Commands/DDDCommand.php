@@ -53,8 +53,8 @@ class DDDCommand extends Command
         $rootDDD = $this->getDirectoryName();
         $this->resolve($rootDDD);
 
-        echo "\n\033[" . '0;32m' . "DDD structure has been created" . "\033[0m";
-        echo "\n\nDo not forget to add these paths to composer.json in autoload < psr-4:\n";
+        echo "\033[" . '0;32m' . "DDD structure created successfully." . "\033[0m";
+        echo "\n\nDo not forget to add these paths to your composer.json in autoload < psr-4:\n";
         echo "    {\n";
         echo "        \"Application\\\\\": \"$rootDDD/Application\",\n";
         echo "        \"Domain\\\\\": \"$rootDDD/Domain\",\n";
