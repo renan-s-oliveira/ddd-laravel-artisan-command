@@ -19,14 +19,14 @@ How to create DDD folder structure
 php artisan make:domain
 ```
 
-Change composer.json
+Update composer.json
 
 ```
 {
         "Application\\": "name_structure/Application",
         "Domain\\": "name_structure/Domain",
         "Support\\": "name_structure/Support",
-    }
+}
 
 ```
 
