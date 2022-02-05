@@ -5,14 +5,14 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 
-class DomainDTOCommand extends Command
+class MakeDomainActionCommand extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'make:domain-dto {domainName} {dtoName}';
+    protected $signature = 'make:domain-action {domainName} {actionName}';
 
     /**
      * The console command description.
@@ -52,7 +52,7 @@ class DomainDTOCommand extends Command
 
         if (!$this->files->exists($path)) {
             $this->files->put($path, $contents);
-            $this->info('Domain DTO ' . $this->getSingularClassName($this->argument('dtoName')) . ' created successfully.');
+            $this->info('Domain Action ' . $this->getSingularClassName($this->argument('actionName')) . ' created successfully.');
         } else {
             $this->info("File : {$path} already exits");
         }
@@ -80,7 +80,7 @@ class DomainDTOCommand extends Command
      */
     public function getStubPath()
     {
-        return __DIR__ . '/../../../stubs/domain/dto.stub';
+        return __DIR__ . '/../../../stubs/domain/action.stub';
     }
 
     /**
@@ -93,8 +93,8 @@ class DomainDTOCommand extends Command
     public function getStubVariables()
     {
         return [
-            'NAMESPACE'         => "Domain\\" . $this->getSingularClassName($this->argument('domainName')) . "\\DTO",
-            'CLASS_NAME'        => $this->getSingularClassName($this->argument('dtoName')),
+            'NAMESPACE'         => "Domain\\" . $this->getSingularClassName($this->argument('domainName')) . "\\Actions",
+            'CLASS_NAME'        => $this->getSingularClassName($this->argument('actionName')),
         ];
     }
 
@@ -134,6 +134,6 @@ class DomainDTOCommand extends Command
      */
     public function getSourceFilePath()
     {
-        return base_path($this->getDirectoryName() . "/Domain") . '/' . $this->getSingularClassName($this->argument('domainName')) . '/DTO/' . $this->getSingularClassName($this->argument('dtoName')) . 'Data.php';
+        return base_path($this->getDirectoryName() . "/Domain") . '/' . $this->getSingularClassName($this->argument('domainName')) . '/Actions/' . $this->getSingularClassName($this->argument('actionName')) . 'Action.php';
     }
 }

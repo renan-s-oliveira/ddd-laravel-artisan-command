@@ -94,7 +94,7 @@ class DomainModelCommand extends Command
     public function getStubVariables()
     {
         return [
-            'NAMESPACE'         => $this->getDirectoryName() . "\\Domain\\" . $this->getSingularClassName($this->argument('domainName')) . "\\Models",
+            'NAMESPACE'         => "Domain\\" . $this->getSingularClassName($this->argument('domainName')) . "\\Models",
             'CLASS_NAME'        => $this->getSingularClassName($this->argument('modelName')),
         ];
     }

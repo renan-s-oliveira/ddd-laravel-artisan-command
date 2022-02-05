@@ -1,0 +1,8 @@
+<?php
+
+namespace $NAMESPACE$;
+
+final class $CLASS_NAME$Action
+{
+
+}
