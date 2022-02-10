@@ -15,7 +15,7 @@
         },
         {
             "name": "Caio Lima",
-            "email": "dev.caiolima@gmai.com"
+            "email": "dev.caiolima@gmail.com"
         }
     ],
     "minimum-stability": "dev",
@@ -30,5 +30,10 @@
                 "DDDArtisan\\DDDArtisanProvider\\DDDArtisanProvider"
             ]
         }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "php artisan vendor:publish --provider=\"DDDArtisan\\DDDArtisanProvider\\DDDArtisanProvider\" --force"
+        ]
     }
 }
