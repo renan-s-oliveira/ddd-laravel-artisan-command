@@ -33,7 +33,7 @@
     },
     "scripts": {
         "post-autoload-dump": [
-            "php artisan vendor:publish --provider=\"DDDArtisan\\DDDArtisanProvider\\DDDArtisanProvider\" --force"
+            "@php artisan vendor:publish --provider=\"DDDArtisan\\DDDArtisanProvider\\DDDArtisanProvider\" --force"
         ]
     }
 }
