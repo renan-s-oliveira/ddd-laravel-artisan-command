@@ -3,6 +3,7 @@
 namespace DDDArtisan\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Artisan;
 
 class DDDCommand extends Command
 {
@@ -41,6 +42,7 @@ class DDDCommand extends Command
         mkdir(base_path("/$pathname/Domain"));
         mkdir(base_path("/$pathname/Application"));
         mkdir(base_path("/$pathname/Support"));
+        Artisan::call('make:ddd-request');
     }
 
     /**

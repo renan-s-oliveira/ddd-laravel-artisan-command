@@ -1,0 +1,27 @@
+<?php
+ 
+namespace Application\Core\Requests;
+ 
+use Illuminate\Http\JsonResponse;
+use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Http\Exceptions\HttpResponseException;
+ 
+class Request extends FormRequest
+{
+    
+    /**
+     * Get the failed validation response for the request.
+     *
+     * @param  array $errors
+     * @return  JsonResponse
+     */
+    protected function failedValidation(Validator $validator)
+    {
+        throw new HttpResponseException(
+        response()->json([
+            'status' => false,
+            'errors' => $validator->errors()
+        ], JsonResponse::HTTP_UNPROCESSABLE_ENTITY));
+    }
+}
