@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace DDDArtisan\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Console\Commands;
+namespace DDDArtisan\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 
-class MakeDomainActionCommand extends Command
+class DomainActionCommand extends Command
 {
     /**
      * The name and signature of the console command.
