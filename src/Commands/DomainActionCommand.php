@@ -80,7 +80,7 @@ class DomainActionCommand extends Command
      */
     public function getStubPath()
     {
-        return __DIR__ . '/../../../stubs/domain/action.stub';
+        return __DIR__ . '/../stubs/domain/action.stub';
     }
 
     /**

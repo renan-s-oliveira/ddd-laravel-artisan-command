@@ -80,7 +80,7 @@ class DomainDTOCommand extends Command
      */
     public function getStubPath()
     {
-        return __DIR__ . '/../../../stubs/domain/dto.stub';
+        return __DIR__ . '/../stubs/domain/dto.stub';
     }
 
     /**

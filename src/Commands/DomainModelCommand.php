@@ -81,7 +81,7 @@ class DomainModelCommand extends Command
      */
     public function getStubPath()
     {
-        return __DIR__ . '/../../../stubs/domain/model.stub';
+        return __DIR__ . '/../stubs/domain/model.stub';
     }
 
     /**

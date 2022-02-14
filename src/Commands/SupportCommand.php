@@ -70,7 +70,7 @@ class SupportCommand extends Command
      */
     public function getStubPath()
     {
-        return __DIR__ . '/../../../stubs/support/support.stub';
+        return __DIR__ . '/../stubs/support/support.stub';
     }
 
     /**
