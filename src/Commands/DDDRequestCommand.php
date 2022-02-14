@@ -81,7 +81,7 @@ class DDDRequestCommand extends Command
      */
     public function getStubPath()
     {
-        return __DIR__ . '/../../../stubs/application/core/request.stub';
+        return __DIR__ . '/../stubs/application/core/request.stub';
     }
 
     /**
