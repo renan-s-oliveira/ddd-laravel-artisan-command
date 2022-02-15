@@ -93,7 +93,7 @@ class DomainDTOCommand extends Command
     public function getStubVariables()
     {
         return [
-            'NAMESPACE'         => "Domain\\" . $this->getSingularClassName($this->argument('domainName')) . "\\DTO",
+            'NAMESPACE'         => "Domain\\" . $this->getSingularClassName($this->argument('domainName')) . "\\DataTransferObject",
             'CLASS_NAME'        => $this->getSingularClassName($this->argument('dtoName')),
         ];
     }
@@ -134,6 +134,6 @@ class DomainDTOCommand extends Command
      */
     public function getSourceFilePath()
     {
-        return base_path($this->getDirectoryName() . "/Domain") . '/' . $this->getSingularClassName($this->argument('domainName')) . '/DTO/' . $this->getSingularClassName($this->argument('dtoName')) . 'Data.php';
+        return base_path($this->getDirectoryName() . "/Domain") . '/' . $this->getSingularClassName($this->argument('domainName')) . '/DataTransferObject/' . $this->getSingularClassName($this->argument('dtoName')) . 'Data.php';
     }
 }
