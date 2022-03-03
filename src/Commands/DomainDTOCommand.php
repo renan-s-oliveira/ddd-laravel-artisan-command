@@ -94,7 +94,7 @@ class DomainDTOCommand extends Command
     {
         return [
             'NAMESPACE'         => "Domain\\" . $this->getSingularClassName($this->argument('domainName')) . "\\DataTransferObject",
-            'CLASS_NAME'        => $this->getSingularClassName($this->argument('dtoName')),
+            'CLASS_NAME'        => $this->getSingularClassName($this->argument('dtoName')) . "Data",
         ];
     }
 
